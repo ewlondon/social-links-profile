@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+:root {
+	--primary-dark: hsl(0, 0%, 8%);
+	--primary-medium: hsl(0, 0%, 12%);
+	--primary-light: hsl(0, 0%, 20%);
+	--primary-accent: hsl(75, 94%, 57%);
+	--primary-white: hsl(0, 0%, 100%);
+	--text-weight-light: 400;
+	--text-weight-med: 600;
+	--text-weight-bold: 700;
+	--text-size-md: 0.6rem;
+	--text-size-lg: 1rem;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Inter, sans-serif;
+	font-size: 14px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: var(--primary-dark);
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary-medium);
+	padding: 2rem;
+	border-radius: 10px;
+	height: max-content;
+	text-align: center;
+	width: min(300px, (100% - 2rem));
+}
+.card img {
+	width: 4rem;
+	height: 4rem;
+	display: block;
+	border-radius: 50%;
+}
+
+.card__header {
+	margin-block-start: 1rem;
+	font-size: var(--text-size-lg);
+	color: var(--primary-white);
+	font-weight: var(--text-weight-med);
+}
+.card__subheader {
+	display: block;
+	font-size: var(--text-size-md);
+	margin-block-start: 0.2rem;
+	font-weight: var(--text-weight-med);
+	color: var(--primary-accent);
+}
+
+.card__subtext {
+	font-size: var(--text-size-md);
+	color: var(--primary-white);
+	margin-block: 1rem;
+}
+.card__links {
+    width: min(400px, 100% );
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.7rem;
+}
+
+.card__links--item {
+    width: 100%;
+	border-radius: 5px;
+	background-color: var(--primary-light);
+	font-size: var(--text-size-md);
+	font-weight: var(--text-weight-med);
+	color: var(--primary-white);
+	padding: 0.6rem;
+	cursor: pointer;
+    transition: background-color 0.2s ease-out, color .2s ease-out;
+}
+
+.card__links--item:hover {
+	background-color: var(--primary-accent);
+	color: var(--primary-dark);
+}
