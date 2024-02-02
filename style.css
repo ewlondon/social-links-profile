@@ -8,8 +8,8 @@
 	--text-weight-light: 400;
 	--text-weight-med: 600;
 	--text-weight-bold: 700;
-	--text-size-md: 0.6rem;
-	--text-size-lg: 1rem;
+	--text-size-md: 0.9rem;
+	--text-size-lg: 1.5rem;
 }
 
 *,
@@ -36,11 +36,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: var(--primary-medium);
-	padding: 2rem;
+	padding: 2.5rem;
 	border-radius: 10px;
 	height: max-content;
 	text-align: center;
-	width: min(300px, (100% - 2rem));
+	width: min(400px, (100% - 2rem));
 }
 .card img {
 	width: 4rem;
@@ -58,7 +58,7 @@ body {
 .card__subheader {
 	display: block;
 	font-size: var(--text-size-md);
-	margin-block-start: 0.2rem;
+	margin-block-start: 0.5rem;
 	font-weight: var(--text-weight-med);
 	color: var(--primary-accent);
 }
@@ -66,7 +66,7 @@ body {
 .card__subtext {
 	font-size: var(--text-size-md);
 	color: var(--primary-white);
-	margin-block: 1rem;
+	margin-block: 1.5rem;
 }
 .card__links {
     width: min(400px, 100% );
@@ -74,7 +74,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 0.7rem;
+	gap: 1rem;
 }
 
 .card__links--item {
@@ -84,7 +84,7 @@ body {
 	font-size: var(--text-size-md);
 	font-weight: var(--text-weight-med);
 	color: var(--primary-white);
-	padding: 0.6rem;
+	padding: 0.8rem;
 	cursor: pointer;
     transition: background-color 0.2s ease-out, color .2s ease-out;
 }
