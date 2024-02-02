@@ -43,8 +43,8 @@ body {
 	width: min(400px, (100% - 2rem));
 }
 .card img {
-	width: 4rem;
-	height: 4rem;
+	width: 6rem;
+	height: 6rem;
 	display: block;
 	border-radius: 50%;
 }
