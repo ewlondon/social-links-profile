@@ -69,7 +69,7 @@ body {
 	margin-block: 1.5rem;
 }
 .card__links {
-    width: min(400px, 100% );
+	width: min(400px, 100%);
 	list-style: none;
 	display: flex;
 	flex-direction: column;
@@ -78,18 +78,30 @@ body {
 }
 
 .card__links--item {
+    display: grid; 
     width: 100%;
+}
+
+.card__links--item > a {
+	width: 100%;
 	border-radius: 5px;
 	background-color: var(--primary-light);
 	font-size: var(--text-size-md);
 	font-weight: var(--text-weight-med);
 	color: var(--primary-white);
 	padding: 0.8rem;
+	text-decoration: none;
 	cursor: pointer;
-    transition: background-color 0.2s ease-out, color .2s ease-out;
+	transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
 
-.card__links--item:hover {
+.card__links--item >a:hover {
 	background-color: var(--primary-accent);
 	color: var(--primary-dark);
+}
+
+@media screen and (width < 400px) {
+	.card {
+		padding: 1.2rem;
+	}
 }
